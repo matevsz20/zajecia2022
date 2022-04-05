@@ -73,13 +73,13 @@ public class ParallelExecutor {
             }
         });
         thread.start();
-        Thread thread2 = new Thread(() ->
-        {
-            while (active) {
-                threadProcess();
-            }
-        });
-        thread2.start();
+       // Thread thread2 = new Thread(() ->
+        // {
+        //    while (active) {
+        //        threadProcess();
+        //    }
+        //});
+        //thread2.start();
     }
 
     public void process(Akcja jednaAkcja) {
